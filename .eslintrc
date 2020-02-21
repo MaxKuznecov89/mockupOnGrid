@@ -1,0 +1,43 @@
+{
+//  https://eslint.org/docs/rules/ - тут валяються все настройки
+    "env": {
+    "browser": true,
+        "es6": true,
+        "node": true
+},
+//  "extends": "eslint:recommended", // включены рекомендованные правила которые сообщают о частых ощшибках
+    "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+    },
+
+    "rules": {
+    "indent": [2, "tab"],
+    "linebreak-style": [2, "windows"],
+    "quotes": [2, "double", { "avoidEscape": true,"allowTemplateLiterals": true }],
+    "semi": [2, "always",{"omitLastInOneLineBlock": false}],
+    "comma-spacing":[ 2,{ "before": true, "after": true }],
+    "strict": [2, "global"],
+    "for-direction": [2], //смотрет что бы мы не свалились в вечный цикл в fore
+    "getter-return": [2, { "allowImplicit": true }], // геттерное свойство должно либо возвращать явное значение, либо явно возвращать undefined
+     "no-cond-assign": [2, "always"],   // запрещает в условиях операто =
+     "no-debugger": [2],
+     "no-dupe-args": [2], //запрещает дублировать параметры в функции
+     "no-dupe-else-if": [2],
+     "no-dupe-keys": [2],
+     "no-duplicate-case": [2] ,// запрещает дубливровать case в switch
+     "no-empty": [2, { "allowEmptyCatch": true }],//запрещает пустые блоки кода
+     "no-ex-assign": [2],//запрещает менять в cathe объект ошибки
+     "no-extra-boolean-cast": [2],//запрещает использовать !!! и т.д.
+     "no-extra-semi": [2], // убирает повторяющиеся точки с запятой
+     "no-func-assign": [2], // не разрешает дублировать декларации функций
+     "no-import-assign": [2], //запрешает переназначать переменные прописанные в import
+     "no-inner-declarations": [2, "both"], // запрещает дкларировать функции и var  внутри if
+     "no-invalid-regexp": [2, { "allowConstructorFlags": ["u", "y"] }],
+     "no-irregular-whitespace":[2],//запрещает в коде управляющие символы
+     "no-misleading-character-class":[2],
+     "no-obj-calls":[2],//запроещает вызывать глобальные объекты
+     "no-prototype-builtins" :[2],//запрещает вызов методов Object.prototype в неявном виде
+     "no-regex-spaces":[2]
+    }
+}

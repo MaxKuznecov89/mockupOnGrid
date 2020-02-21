@@ -1,0 +1,50 @@
+{
+  "name": "ussr-pomodoro",
+  "version": "1.0.0",
+  "description": "new style a timer pomodoro",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha dist/js/test/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nikolay1984/USSR-POMODORO.git"
+  },
+  "author": "Nikolay Nikulin and Maxim Kuznecov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nikolay1984/USSR-POMODORO/issues"
+  },
+  "homepage": "https://github.com/Nikolay1984/USSR-POMODORO#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/node": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "babel-plugin-add-module-exports": "^1.0.2",
+    "chai": "^4.2.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-csscomb": "^3.1.0",
+    "gulp-csslint": "^1.0.1",
+    "gulp-csso": "^4.0.1",
+    "gulp-eslint": "^6.0.0",
+    "gulp-htmlhint": "^3.0.0",
+    "gulp-uglify-es": "^2.0.0",
+    "gulp-uncss-sp": "0.0.1",
+    "gulp-useref": "^4.0.1",
+    "jsdom": "16.2.0",
+    "jsdom-global": "3.0.2",
+    "mocha": "^7.0.1"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ],
+  "dependencies": {
+    "babel-preset-latest": "^6.24.1",
+    "browser-sync": "^2.26.7",
+    "geteventlisteners": "^1.1.0",
+    "gulp-htmlmin": "^5.0.1"
+  }
+}
