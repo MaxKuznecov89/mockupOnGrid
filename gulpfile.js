@@ -64,9 +64,6 @@ gulp.task('workhtml',async function() {
 
 gulp.task('workcss',async function() {
         gulp.src('./app/css/*.css')
-        .pipe(uncss({
-            html: ['app/index.html']
-        }))
         .pipe(autoprefixer())
         .pipe(csso({
             debug: true
@@ -77,10 +74,8 @@ gulp.task('workcss',async function() {
 gulp.task('comb', gulp.parallel('workhtml:dev', 'workcss:dev','workjs:dev'));
 
 gulp.task('watch', async function() {
-    gulp.watch('dist/**/*.html',gulp.series('workhtml'));
-    gulp.watch('dist/css/**/*.css',gulp.series('workhtml','workcss'));
+    gulp.watch('dist/**/*.+(html|css)',gulp.series('workhtml','workcss'));
     gulp.watch('dist/js/*.js',gulp.series('workjs','babel'));
-    // gulp.watch('dist/js/*.js',gulp.series('babel'))
 
 });
 
