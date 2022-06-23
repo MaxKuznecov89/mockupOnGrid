@@ -34,7 +34,7 @@
     "gulp-uglify-es": "^2.0.0",
     "gulp-uncss-sp": "0.0.1",
     "gulp-useref": "^4.0.1",
-    "jsdom": "16.2.0",
+    "jsdom": "16.5.0",
     "jsdom-global": "3.0.2",
     "mocha": "^7.0.1"
   },
